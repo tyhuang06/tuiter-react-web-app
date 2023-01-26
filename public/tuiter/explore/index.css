@@ -1,0 +1,50 @@
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+
+.wd-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-left: 16px;
+	padding-right: 12px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: rgb(47, 51, 54);
+}
+
+.wd-searchbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.wd-search-icon {
+	padding-left: 8px;
+	position: absolute;
+}
+
+.wd-icon {
+	width: 24px;
+	height: 24px;
+}
+
+.wd-searchbar input {
+	background-color: rgb(47, 51, 54);
+	color: white;
+	padding: 10px;
+	padding-left: 40px;
+	width: 100%;
+	border: none;
+	margin-right: 12px;
+}
+
+.wd-rounded-corners {
+	border-radius: 50px;
+}
