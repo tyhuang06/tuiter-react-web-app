@@ -10,6 +10,11 @@ body {
 	align-items: center;
 }
 
+.wd-searchbar input {
+	background-color: #eff3f4;
+	border: none;
+}
+
 .wd-search-icon {
 	padding-left: 8px;
 	position: absolute;
@@ -77,4 +82,11 @@ body {
 	background-color: white;
 	color: black;
 	font-weight: bold;
+}
+
+.nav .nav-item .nav-link.active {
+	color: black;
+	background-color: white;
+	border-radius: 0;
+	border-bottom: 4px solid #1da1f2;
 }
