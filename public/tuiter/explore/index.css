@@ -55,3 +55,8 @@ body {
 .fa-stack.small {
 	font-size: 0.5em;
 }
+
+.wd-follow-list img {
+	width: 42px;
+	height: 42px;
+}
