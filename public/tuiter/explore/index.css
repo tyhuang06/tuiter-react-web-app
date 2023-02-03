@@ -60,3 +60,21 @@ body {
 	width: 42px;
 	height: 42px;
 }
+
+.list-group-item {
+	border: none;
+}
+
+.wd-twitter-blue-text {
+	color: #1da1f2;
+}
+
+.wd-twitter-blue-bg {
+	background-color: #1da1f2;
+}
+
+.list-group .active {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
