@@ -8,8 +8,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 16px;
-	margin-bottom: 16px;
 }
 
 .wd-search-icon {
@@ -22,43 +20,12 @@ body {
 	height: 24px;
 }
 
-.wd-links {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	color: rgb(110, 118, 125);
-	border-bottom: 1px solid rgb(47, 51, 54);
-}
-
-.wd-links div {
-	font-size: 15px;
-	padding: 16px;
-}
-
-.wd-links .selected {
-	border-bottom: 2px solid;
-	border-color: rgb(29, 161, 242);
-	color: rgb(29, 161, 242);
-}
-
-.wd-posts {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	overflow-y: auto;
-}
-
 .wd-post {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 16px;
-	border-bottom: 1px solid rgb(47, 51, 54);
-}
-
-.wd-post div {
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding: 10px;
+	border-bottom: 1px solid #dee2e6;
 }
 
 .wd-post .wd-topic,
@@ -70,6 +37,7 @@ body {
 .wd-topic-author {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .wd-post-with-img {
@@ -82,4 +50,8 @@ body {
 .wd-post-with-img img {
 	height: 100px;
 	width: 100px;
+}
+
+.fa-stack.small {
+	font-size: 0.5em;
 }

@@ -13,46 +13,51 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container mt-1">
+    <div class="container mt-2">
         <div class="row">
-            <div class="list-group col-2">
-                <div class="list-group-item"><i class="fa-brands fa-twitter"></i></div>
-                <a href="../home.html" class="list-group-item list-group-item-action">
-                    <i class="fa-sharp fa-solid fa-house-chimney"></i>
-                    <span class="ms-1">Home</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                    <i class="fa-solid fa-hashtag"></i>
-                    <span class="ms-1">Explore</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bell"></i>
-                    <span class="ms-1">Notifications</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span class="ms-1">Messages</span>
-                </a>
-                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <span class="ms-1">Bookmarks</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-list"></i>
-                    <span class="ms-1">Lists</span>
-                </a>
-                <a href="../profile.html" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="ms-1">Profile</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-ellipsis"></i>
-                    <span class="ms-1">More</span>
-                </a>
+            <div class="col-2">
+                <div class="list-group">
+                    <div class="list-group-item"><i class="fa-brands fa-twitter"></i></div>
+                    <a href="../home.html" class="list-group-item list-group-item-action">
+                        <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        <span class="ms-1">Home</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <span class="ms-1">Explore</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="ms-1">Notifications</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="ms-1">Messages</span>
+                    </a>
+                    <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="ms-1">Bookmarks</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="ms-1">Lists</span>
+                    </a>
+                    <a href="../profile.html" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="ms-1">Profile</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span class="ms-1">More</span>
+                    </a>
+                </div>
+                <div class="d-grid gap-2 mt-2">
+                    <button class="btn btn-primary rounded-5" type="button">Tweet</button>
+                </div>
             </div>
 
             <div class="col-6">
-                <div class="wd-searchbar">
+                <div class="wd-searchbar mb-2">
                     <i class="fa-solid fa-magnifying-glass wd-search-icon"></i>
                     <input type="text" placeholder="Search Twitter" class="form-control wd-rounded-corners ps-5">
                     <i class="fa-solid fa-gear ms-3 fa-lg text-primary"></i>
@@ -74,57 +79,83 @@
                         <a class="nav-link" href="#">Entertainment</a>
                     </li>
                 </ul>
-                <div class="wd-posts">
-                    <div class="wd-post">
-                        <div class="wd-topic">Trending in Science</div>
-                        <div class="wd-title">Starship</div>
-                        <div class="wd-tuits-num">55.5K Tweets</div>
-                    </div>
-                    <div class="wd-post">
-                        <div class="wd-post-with-img">
-                            <div class="wd-text">
-                                <div class="wd-topic-author">
-                                    <div class="wd-author">The New York Times </div>
-                                    <div class="wd-topic"> · Yesterday</div>
+                <div class="card my-1">
+                    <img src="../assets/starship.jpg" class="card-img-top">
+                    <div class="card-body p-0">
+                        <!-- <div class="wd-post">
+                            <div class="wd-topic">Web Development</div>
+                            <div class="wd-title">Starship</div>
+                            <div class="wd-tuits-num">55.5K Tweets</div>
+                        </div> -->
+                        <div class="wd-post">
+                            <div class="wd-post-with-img">
+                                <div class="wd-text">
+                                    <div class="wd-topic">Web Development</div>
+                                    <div class="wd-topic-author">
+                                        <div class="wd-author">
+                                            <span>ReactJS</span>
+                                            <span class="fa-stack fa-2x small">
+                                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
+                                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                            </span>
+                                        </div>
+                                        <div class="wd-topic"> · 2h</div>
+                                    </div>
+                                    <div class="wd-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
                                 </div>
-                                <div class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</div>
+                                <img src="../assets/react.png" alt="" class="wd-rounded-corners-small">
                             </div>
-                            <img src="../assets/cnn.png" alt="" class="wd-rounded-corners-small">
                         </div>
-                    </div>
-                    <div class="wd-post">
-                        <div class="wd-post-with-img">
-                            <div class="wd-text">
-                                <div class="wd-topic">COVID-19 · LIVE</div>
-                                <div class="wd-title">COVID-19: News and updates for Massachusetts</div>
-                            </div>
-                            <img src="../assets/mass.jpeg" alt="" class="wd-rounded-corners-small">
-                        </div>
-                    </div>
-                    <div class="wd-post">
-                        <div class="wd-post-with-img">
-                            <div class="wd-text">
-                                <div class="wd-topic-author">
-                                    <div class="wd-author">Bloomberg Opinion</div>
-                                    <div class="wd-topic"> · Yesterday</div>
+                        <div class="wd-post">
+                            <div class="wd-post-with-img">
+                                <div class="wd-text">
+                                    <div class="wd-topic-author">
+                                        <div class="wd-author">
+                                            <span>JavaScript</span>
+                                            <span class="fa-stack fa-2x small">
+                                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
+                                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                            </span>
+                                        </div>
+                                        <div class="wd-topic"> · 2h</div>
+                                    </div>
+                                    <div class="wd-title">JavaScript is programming language that can run on browsers as well as desktops</div>
                                 </div>
-                                <div class="wd-title">Thinking about getting a booster? Read this first.</div>
+                                <img src="../assets/js.png" alt="" class="wd-rounded-corners-small">
                             </div>
-                            <img src="../assets/bloomberg.png" alt="" class="wd-rounded-corners-small">
                         </div>
-                    </div>
-                    <div class="wd-post">
-                        <div class="wd-topic">Splatoon · Trending</div>
-                        <div class="wd-title">Milk Chocolate</div>
-                        <div class="wd-tuits-num">12.4K Tweets</div>
-                    </div>
-                    <div class="wd-post">
-                        <div class="wd-post-with-img">
-                            <div class="wd-text">
-                                <div class="wd-topic">Tennis Tournament · LIVE</div>
-                                <div class="wd-title">Australian Open 2023</div>
+                        <div class="wd-post">
+                            <div class="wd-post-with-img">
+                                <div class="wd-text">
+                                    <div class="wd-topic">Web Development</div>
+                                    <div class="wd-topic-author">
+                                        <div class="wd-author">
+                                            <span>jQuery</span>
+                                        </div>
+                                    </div>
+                                    <div class="wd-tuits-num">123K Tweets</div>
+                                </div>
+                                <img src="../assets/jquery.png" alt="" class="wd-rounded-corners-small">
                             </div>
-                            <img src="../assets/ao.png" alt="" class="wd-rounded-corners-small">
+                        </div>
+                        <div class="wd-post">
+                            <div class="wd-post-with-img">
+                                <div class="wd-text">
+                                    <div class="wd-topic">Web Development</div>
+                                    <div class="wd-topic-author">
+                                        <div class="wd-author">
+                                            <span>NodeJS</span>
+                                            <span class="fa-stack fa-2x small">
+                                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
+                                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                            </span>
+                                        </div>
+                                        <div class="wd-topic"> · 2h</div>
+                                    </div>
+                                    <div class="wd-tuits-num">123K Tweets</div>
+                                </div>
+                                <img src="../assets/node.jpg" alt="" class="wd-rounded-corners-small">
+                            </div>
                         </div>
                     </div>
                 </div>
