@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-10 col-lg-7 col-xl-6">
+            <div class="col-sm-10 col-lg-7 col-xl-6 border-start border-end p-0">
                 <div class="wd-searchbar mb-2">
                     <i class="fa-solid fa-magnifying-glass wd-search-icon text-secondary ms-4"></i>
                     <input type="text" placeholder="Search Twitter" class="form-control wd-rounded-corners ps-5 ms-3">
@@ -79,9 +79,9 @@
                         <a class="nav-link text-secondary" href="#">Entertainment</a>
                     </li>
                 </ul>
-                <div class="card my-1">
+                <div class="card my-1 rounded-0 border-0">
                     <div class="position-relative">
-                        <img src="../assets/starship.jpg" class="card-img-top">
+                        <img src="../assets/starship.jpg" class="card-img-top rounded-0">
                         <div class="position-absolute bottom-0 text-white fs-3 ms-2">
                             <p class="mb-1">SpaceX's Starship</p>
                         </div>
@@ -166,91 +166,96 @@
                 </div>
             </div>
 
-            <ul class="wd-follow-list list-group d-none d-lg-flex col-lg-4">
-                <li class="list-group-item fw-bold">
-                    Who to follow
-                </li>
-                <li class="list-group-item d-flex align-content-center">
-                    <img src="../assets/java.png" alt="" class="rounded-circle">
-                    <div class="ms-3">
-                        <div class="fw-bold">
-                            <span>Java</span>
-                            <span class="fa-stack fa-2x small">
-                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
-                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
-                            </span>
+            <div class="d-none d-lg-flex flex-column col-lg-4">
+                <ul class="wd-follow-list list-group rounded-4">
+                    <li class="list-group-item fw-bold">
+                        Who to follow
+                    </li>
+                    <li class="list-group-item d-flex align-content-center">
+                        <img src="../assets/java.png" alt="" class="rounded-circle">
+                        <div class="ms-3">
+                            <div class="fw-bold">
+                                <span>Java</span>
+                                <span class="fa-stack fa-2x small">
+                                    <i class="fa-solid fa-certificate wd-twitter-blue-text fa-stack-2x"></i>
+                                    <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="text-secondary">@Java</div>
                         </div>
-                        <div class="text-secondary">@Java</div>
-                    </div>
-                    <div class="ms-auto my-1 d-flex align-content-center">
-                        <button type="button" class="btn btn-primary rounded-5">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex align-content-center">
-                    <img src="../assets/relativity.png" alt="" class="rounded-circle">
-                    <div class="ms-3">
-                        <div class="fw-bold">
-                            <span>Relativity Space</span>
-                            <span class="fa-stack fa-2x small">
-                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
-                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
-                            </span>
+                        <div class="ms-auto my-1 d-flex align-content-center">
+                            <button type="button" class="btn btn-dark rounded-5">Follow</button>
                         </div>
-                        <div class="text-secondary">@relativityspace</div>
-                    </div>
-                    <div class="ms-auto my-1 d-flex align-content-center">
-                        <button type="button" class="btn btn-primary rounded-5">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex align-content-center">
-                    <img src="../assets/virgin.png" alt="" class="rounded-circle">
-                    <div class="ms-3">
-                        <div class="fw-bold">
-                            <span>Virgin Galactic</span>
-                            <span class="fa-stack fa-2x small">
-                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
-                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
-                            </span>
+                    </li>
+                    <li class="list-group-item d-flex align-content-center">
+                        <img src="../assets/relativity.png" alt="" class="rounded-circle">
+                        <div class="ms-3">
+                            <div class="fw-bold">
+                                <span>Relativity Space</span>
+                                <span class="fa-stack fa-2x small">
+                                    <i class="fa-solid fa-certificate wd-twitter-blue-text fa-stack-2x"></i>
+                                    <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="text-secondary">@relativityspace</div>
                         </div>
-                        <div class="text-secondary">@virgingalactic</div>
-                    </div>
-                    <div class="ms-auto my-1 d-flex align-content-center">
-                        <button type="button" class="btn btn-primary rounded-5">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex align-content-center">
-                    <img src="../assets/nasa.png" alt="" class="rounded-circle">
-                    <div class="ms-3">
-                        <div class="fw-bold">
-                            <span>NASA</span>
-                            <span class="fa-stack fa-2x small">
-                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
-                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
-                            </span>
+                        <div class="ms-auto my-1 d-flex align-content-center">
+                            <button type="button" class="btn btn-dark rounded-5">Follow</button>
                         </div>
-                        <div class="text-secondary">@NASA</div>
-                    </div>
-                    <div class="ms-auto my-1 d-flex align-content-center">
-                        <button type="button" class="btn btn-primary rounded-5">Follow</button>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex align-content-center">
-                    <img src="../assets/tesla.png" alt="" class="rounded-circle">
-                    <div class="ms-3">
-                        <div class="fw-bold">
-                            <span>Tesla</span>
-                            <span class="fa-stack fa-2x small">
-                                <i class="fa-solid fa-certificate fa-stack-2x"></i>
-                                <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
-                            </span>
+                    </li>
+                    <li class="list-group-item d-flex align-content-center">
+                        <img src="../assets/virgin.png" alt="" class="rounded-circle">
+                        <div class="ms-3">
+                            <div class="fw-bold">
+                                <span>Virgin Galactic</span>
+                                <span class="fa-stack fa-2x small">
+                                    <i class="fa-solid fa-certificate wd-twitter-blue-text fa-stack-2x"></i>
+                                    <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="text-secondary">@virgingalactic</div>
                         </div>
-                        <div class="text-secondary">@Tesla</div>
-                    </div>
-                    <div class="ms-auto my-1 d-flex align-content-center">
-                        <button type="button" class="btn btn-primary rounded-5">Follow</button>
-                    </div>
-                </li>
-            </ul>
+                        <div class="ms-auto my-1 d-flex align-content-center">
+                            <button type="button" class="btn btn-dark rounded-5">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-content-center">
+                        <img src="../assets/nasa.png" alt="" class="rounded-circle">
+                        <div class="ms-3">
+                            <div class="fw-bold">
+                                <span>NASA</span>
+                                <span class="fa-stack fa-2x small">
+                                    <i class="fa-solid fa-certificate wd-twitter-blue-text fa-stack-2x"></i>
+                                    <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="ms-auto my-1 d-flex align-content-center">
+                            <button type="button" class="btn btn-dark rounded-5">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-content-center">
+                        <img src="../assets/tesla.png" alt="" class="rounded-circle">
+                        <div class="ms-3">
+                            <div class="fw-bold">
+                                <span>Tesla</span>
+                                <span class="fa-stack fa-2x small">
+                                    <i class="fa-solid fa-certificate wd-twitter-blue-text fa-stack-2x"></i>
+                                    <i class="fa-solid fa-check fa-inverse fa-stack-1x"></i>
+                                </span>
+                            </div>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="ms-auto my-1 d-flex align-content-center">
+                            <button type="button" class="btn btn-dark rounded-5">Follow</button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none wd-twitter-blue-text">Show more</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     
