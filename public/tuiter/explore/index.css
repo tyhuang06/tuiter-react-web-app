@@ -1,6 +1,6 @@
-body {
+/* body {
 	margin: 0;
-}
+}*/
 
 .wd-searchbar {
 	display: flex;
@@ -18,18 +18,12 @@ body {
 	position: absolute;
 }
 
-.wd-icon {
-	width: 24px;
-	height: 24px;
-}
-
 .wd-post {
 	display: flex;
 	color: white;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	border-bottom: 1px solid #555;
 }
 
 .wd-post .wd-topic,
@@ -63,25 +57,12 @@ body {
 .wd-follow-list,
 .wd-follow-list .list-group-item {
 	display: flex;
-	/* 	background-color: #f8f9f9; */
 	height: fit-content;
 }
 
 .wd-follow-list img {
 	width: 42px;
 	height: 42px;
-}
-
-.list-group-item {
-	border: none;
-}
-
-.wd-twitter-blue-text {
-	color: #1da1f2;
-}
-
-.wd-twitter-blue-bg {
-	background-color: #1da1f2;
 }
 
 .wd-overlay-text {
