@@ -1,20 +1,17 @@
 const NavigationSidebar = (active) => {
-	/* console.log(active);
 	$('.list-group-item').removeClass('active');
-
-	if (active === 'home') {
-		$('#wd-home-nav').addClass('active');
-	} else if (active === 'explore') {
-		$('#wd-explore-nav').addClass('active');
-	} */
 
 	return `
     <div class="list-group">
-        <a href="../HomeScreen/index.html" id="wd-home-nav" class="list-group-item list-group-item-action">
+        <a href="../HomeScreen/index.html" id="wd-home-nav" class="list-group-item list-group-item-action ${
+			active === 'home' ? 'active' : ''
+		}">
             <i class="fa-sharp fa-solid fa-house-chimney"></i>
             <span class="ms-1 d-none d-xl-inline">Home</span>
         </a>
-        <a href="../ExploreScreen/index.html" id="wd-explore-nav" class="list-group-item list-group-item-action" aria-current="true">
+        <a href="../ExploreScreen/index.html" id="wd-explore-nav" class="list-group-item list-group-item-action ${
+			active === 'explore' ? 'active' : ''
+		}" aria-current="true">
             <i class="fa-regular fa-hashtag"></i>
             <span class="ms-1 d-none d-xl-inline">Explore</span>
         </a>
