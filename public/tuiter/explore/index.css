@@ -1,6 +1,4 @@
 body {
-	background-color: white;
-	color: black;
 	margin: 0;
 }
 
@@ -27,10 +25,11 @@ body {
 
 .wd-post {
 	display: flex;
+	color: white;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	border-bottom: 1px solid #dee2e6;
+	border-bottom: 1px solid #555;
 }
 
 .wd-post .wd-topic,
@@ -64,7 +63,7 @@ body {
 .wd-follow-list,
 .wd-follow-list .list-group-item {
 	display: flex;
-	background-color: #f8f9f9;
+	/* 	background-color: #f8f9f9; */
 	height: fit-content;
 }
 
@@ -85,15 +84,6 @@ body {
 	background-color: #1da1f2;
 }
 
-.list-group .active {
-	background-color: white;
-	color: black;
-	font-weight: bold;
-}
-
-.nav .nav-item .nav-link.active {
-	color: black !important;
-	background-color: white;
-	border-radius: 0;
-	border-bottom: 4px solid #1da1f2;
+.wd-overlay-text {
+	color: #282828;
 }
