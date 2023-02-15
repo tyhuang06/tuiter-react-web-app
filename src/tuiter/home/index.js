@@ -2,7 +2,7 @@ import React from 'react';
 import postsArray from './posts.json';
 import HomeItem from './home-item';
 
-const Home = () => {
+const HomeComponent = () => {
 	return (
 		<ul class="list-group list-group-flush">
 			{postsArray.map((post) => (
@@ -12,4 +12,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomeComponent;
