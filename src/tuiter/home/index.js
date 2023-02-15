@@ -4,7 +4,7 @@ import HomeItem from './home-item';
 
 const HomeComponent = () => {
 	return (
-		<ul class="list-group list-group-flush">
+		<ul className="list-group list-group-flush">
 			{postsArray.map((post) => (
 				<HomeItem key={post._id} post={post} />
 			))}
