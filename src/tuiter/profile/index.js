@@ -12,7 +12,7 @@ const ProfileComponent = () => {
 
     return (
         <div className="border-start border rounded-1">
-            <div className="d-flex flex-row align-items-center mb-2">
+            <div className="d-flex flex-row align-items-center my-2">
                 <Link to={ `/tuiter` }>
                     <FontAwesomeIcon icon={ faArrowLeft } className="mx-3 my-auto text-black"/>
                 </Link>
@@ -30,7 +30,8 @@ const ProfileComponent = () => {
 
             <div className="d-flex flex-row justify-content-end my-2 w-100">
                 <button type="button"
-                        className="btn border border-secondary-subtle text-black rounded-pill me-2">
+                        className="btn border border-secondary-subtle text-black rounded-pill me-2"
+                        onClick={ () => navigate('/tuiter/edit-profile', { replace: true }) }>
                     Edit Profile
                 </button>
             </div>
