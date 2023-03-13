@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCameraRetro, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { updateProfile } from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
@@ -51,10 +51,29 @@ const EditProfileComponent = () => {
                     </button>
                 </div>
 
-                <img src={ `/images/${ profileInfo.bannerPicture }` } alt="" width="100%" height="300px"/>
+                <div className="position-relative bg-black">
+                    <img src={ `/images/${ profileInfo.bannerPicture }` } alt="" width="100%" height="300px"
+                         className="opacity-75"/>
+                    <div className="position-absolute overlay top-50 start-50 translate-middle">
+                        <button type="button" className="btn btn-dark rounded-circle opacity-50">
+                            <FontAwesomeIcon icon={ faCameraRetro } className="text-white"/>
+                        </button>
+                        <button type="button" className="btn btn-dark rounded-circle opacity-50 ms-2 ">
+                            <FontAwesomeIcon icon={ faXmark } className="text-white"/>
+                        </button>
+                    </div>
+                </div>
                 <div className="position-relative mb-5">
-                    <img src={ `/images/${ profileInfo.profilePicture }` } alt="" width="150px" height="150px"
-                         className="profile_pic rounded-circle position-absolute"/>
+                    <div className="profile_pic position-absolute rounded-circle bg-black">
+                        <img src={ `/images/${ profileInfo.profilePicture }` } alt="" width="150px" height="150px"
+                             className="rounded-circle opacity-75"/>
+                        <div className="position-absolute overlay top-50 start-50 translate-middle">
+                            <button type="button" className="btn btn-dark rounded-circle opacity-50">
+                                <FontAwesomeIcon icon={ faCameraRetro } className="text-white"/>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
 
