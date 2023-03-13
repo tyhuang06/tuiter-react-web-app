@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faArrowUpFromBracket, faRetweet } from "@fortawesome/free-solid-svg-icons";
+import { faRetweet, faHeart as faHeartSolid, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 
 const TuitStats = ({ post }) => {
     return (
@@ -15,11 +15,15 @@ const TuitStats = ({ post }) => {
                 <span className="ms-1">{ post.retweets }</span>
             </div>
             <div>
-                <FontAwesomeIcon icon={ faHeart }/>
+                { post.liked ? (
+                    <FontAwesomeIcon icon={ faHeartSolid } className="text-danger"/>
+                ) : (
+                    <FontAwesomeIcon icon={ faHeart }/>
+                ) }
                 <span className="ms-1">{ post.likes }</span>
             </div>
             <div>
-                <FontAwesomeIcon icon={ faArrowUpFromBracket }/>
+                <FontAwesomeIcon icon={ faShareNodes }/>
             </div>
         </div>
     )

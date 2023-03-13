@@ -7,7 +7,7 @@ import HomeComponent from './home';
 import { configureStore } from "@reduxjs/toolkit";
 import whoReducer from "./reducers/who-reducer";
 import { Provider } from "react-redux";
-import tuitsReducer from "./tuits/tuits-reducer";
+import tuitsReducer from "./reducers/tuits-reducer";
 
 const store = configureStore({ reducer: { who: whoReducer, tuits: tuitsReducer } });
 
@@ -24,7 +24,7 @@ function Tuiter() {
                     style={ { position: 'relative' } }
                 >
                     <Routes>
-                        <Route path="home" element={ <HomeComponent/> }/>
+                        <Route index element={ <HomeComponent/> }/>
                         <Route path="explore" element={ <ExploreComponent/> }/>
                     </Routes>
                 </div>
