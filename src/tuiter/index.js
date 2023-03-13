@@ -9,8 +9,9 @@ import whoReducer from "./reducers/who-reducer";
 import { Provider } from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
 import ProfileComponent from "./profile";
+import profileReducer from "./reducers/profile-reducer";
 
-const store = configureStore({ reducer: { who: whoReducer, tuits: tuitsReducer } });
+const store = configureStore({ reducer: { who: whoReducer, tuits: tuitsReducer, profile: profileReducer } });
 
 function Tuiter() {
     return (
