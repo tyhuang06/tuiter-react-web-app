@@ -7,8 +7,9 @@ import HomeComponent from './home';
 import { configureStore } from "@reduxjs/toolkit";
 import whoReducer from "./reducers/who-reducer";
 import { Provider } from "react-redux";
+import tuitsReducer from "./tuits/tuits-reducer";
 
-const store = configureStore({ reducer: { who: whoReducer } });
+const store = configureStore({ reducer: { who: whoReducer, tuits: tuitsReducer } });
 
 function Tuiter() {
     return (

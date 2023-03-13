@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 1,
+    "topic": "Space",
+    "userName": "Elon Musk",
+    "title": "Amazing show about @Inspiration4x mission!",
+    "image": "elon_avatar.jpg",
+    "handle": "elonmusk",
+    "time": "23h",
+    "comments": "4.3K",
+    "retweets": "3.5K",
+    "likes": "37.5K",
+    "liked": true,
+    "tuit": "From training to launch to landing, this all-access documentary series follows the first all-civilian mission to space."
+  },
+  {
+    "_id": 2,
+    "topic": "News",
+    "userName": "New York Post",
+    "title": "Grimes seen reading Karl Marx following split with world's richest Elon Musk",
+    "image": "avatar_nypost.png",
+    "handle": "nypost",
+    "time": "23h",
+    "comments": "965",
+    "retweets": "2.4K",
+    "likes": "4K",
+    "liked": false,
+    "tuit": "Singer Grimes attends the 2021 Met Gala in New York. Comrade Grimes has broken her silence on those paparazzi photos of her reading a copy of Karl Marx and Friedrich Engels' “Communist Manifesto” shortly after she sort of broke up with billionaire boyfriend Elon Musk."
+  },
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.png",
+    "liked": true,
+    "comments": 123,
+    "retweets": 432,
+    "likes": 2345,
+    "handle": "spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  }
+]

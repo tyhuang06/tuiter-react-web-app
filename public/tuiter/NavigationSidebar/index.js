@@ -1,17 +1,17 @@
 const NavigationSidebar = (active) => {
-	$('.list-group-item').removeClass('active');
+    $('.list-group-item').removeClass('active');
 
-	return `
+    return `
     <div class="list-group">
         <a href="../HomeScreen/index.html" id="wd-home-nav" class="list-group-item list-group-item-action ${
-			active === 'home' ? 'active' : ''
-		}">
+        active === 'home-old' ? 'active' : ''
+    }">
             <i class="fa-sharp fa-solid fa-house-chimney"></i>
             <span class="ms-1 d-none d-xl-inline">Home</span>
         </a>
         <a href="../ExploreScreen/index.html" id="wd-explore-nav" class="list-group-item list-group-item-action ${
-			active === 'explore' ? 'active' : ''
-		}" aria-current="true">
+        active === 'explore' ? 'active' : ''
+    }" aria-current="true">
             <i class="fa-regular fa-hashtag"></i>
             <span class="ms-1 d-none d-xl-inline">Explore</span>
         </a>
