@@ -6,18 +6,25 @@ import {
 	faRetweet,
 	faShareNodes,
 } from '@fortawesome/free-solid-svg-icons';
+import { updateTuitThunk } from '../../services/tuits-thunks';
+import { useDispatch } from 'react-redux';
 
 const TuitStats = ({ post }) => {
-	let [likes, setLikes] = useState(post.likes);
-	let [liked, setLiked] = useState(post.liked);
+	const dispatch = useDispatch();
 
 	const likeHandler = () => {
-		if (liked) {
-			setLiked(false);
-			setLikes(likes - 1);
+		if (post.liked) {
+			dispatch(
+				updateTuitThunk({
+					...post,
+					liked: false,
+					likes: post.likes - 1,
+				})
+			);
 		} else {
-			setLiked(true);
-			setLikes(likes + 1);
+			dispatch(
+				updateTuitThunk({ ...post, liked: true, likes: post.likes + 1 })
+			);
 		}
 	};
 
@@ -31,17 +38,16 @@ const TuitStats = ({ post }) => {
 				<FontAwesomeIcon icon={faRetweet} />
 				<span className="ms-1">{post.retuits}</span>
 			</div>
-			<div>
-				{liked ? (
+			<div onClick={likeHandler}>
+				{post.liked ? (
 					<FontAwesomeIcon
 						icon={faHeartSolid}
 						className="text-danger"
-						onClick={likeHandler}
 					/>
 				) : (
-					<FontAwesomeIcon icon={faHeart} onClick={likeHandler} />
+					<FontAwesomeIcon icon={faHeart} />
 				)}
-				<span className="ms-1">{likes}</span>
+				<span className="ms-1">{post.likes}</span>
 			</div>
 			<div>
 				<FontAwesomeIcon icon={faShareNodes} />
