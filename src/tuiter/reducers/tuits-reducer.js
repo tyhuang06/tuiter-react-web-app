@@ -14,7 +14,7 @@ const initialState = {
 
 const currentUser = {
 	username: 'NASA',
-	handle: 'nasa',
+	handle: '@nasa',
 	image: 'nasa.png',
 };
 
@@ -50,12 +50,7 @@ const tuitsSlice = createSlice({
 		},
 		[createTuitThunk.fulfilled]: (state, { payload }) => {
 			state.loading = false;
-			const newTuit = {
-				...payload,
-				...templateTuit,
-				_id: new Date().getTime(),
-			};
-			state.tuits.push(newTuit);
+			state.tuits.push(payload);
 		},
 		[updateTuitThunk.fulfilled]: (state, { payload }) => {
 			state.loading = false;
