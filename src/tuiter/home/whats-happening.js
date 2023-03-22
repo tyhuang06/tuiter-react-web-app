@@ -3,6 +3,24 @@ import { useDispatch } from 'react-redux';
 import { createTuit } from '../reducers/tuits-reducer';
 import { createTuitThunk } from '../../services/tuits-thunks';
 
+const currentUser = {
+	username: 'NASA',
+	handle: '@nasa',
+	image: 'nasa.png',
+};
+
+const templateTuit = {
+	...currentUser,
+	topic: 'Space',
+	time: '2h',
+	liked: false,
+	replies: 0,
+	retuits: 0,
+	likes: 0,
+	dislikes: 0,
+	disliked: false,
+};
+
 const WhatsHappening = () => {
 	let [whatsHappening, setWhatsHappening] = useState('');
 
@@ -10,6 +28,8 @@ const WhatsHappening = () => {
 
 	const tuitClickHandler = () => {
 		const newTuit = {
+			...templateTuit,
+			...currentUser,
 			tuit: whatsHappening,
 		};
 
