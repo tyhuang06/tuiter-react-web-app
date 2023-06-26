@@ -1,0 +1,90 @@
+.wd-header {
+	display: flex;
+	flex-direction: column;
+	padding: 12px 16px;
+	border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-header .wd-title {
+	font-size: 20px;
+}
+
+.wd-header .wd-user {
+	font-size: 13px;
+	color: rgb(136, 153, 166);
+}
+
+.wd-tuits {
+	display: flex;
+	flex-direction: row;
+	padding: 12px 16px;
+	border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-tuits-content {
+	display: flex;
+	flex-direction: column;
+	padding-left: 12px;
+	max-width: 506px;
+}
+
+.wd-tuits-content .wd-author {
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+.wd-tuits-content .wd-author .wd-author-username,
+.wd-tuits-content .wd-author .wd-author-date {
+	color: rgb(136, 153, 166);
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.wd-tuits-content .wd-tuits-text {
+	font-size: 15px;
+	padding-top: 4px;
+	margin-bottom: 12px;
+}
+
+.wd-original-tuit {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-original-tuit .wd-original-content {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	font-size: 15px;
+}
+
+.wd-original-tuit .wd-original-text {
+	color: rgb(136, 153, 166);
+}
+
+.wd-tuits-links {
+	display: flex;
+	flex-direction: row;
+	padding-top: 12px;
+	justify-content: space-between;
+	color: rgb(136, 153, 166);
+	font-size: 15px;
+}
+
+.wd-tuits-links a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(136, 153, 166);
+	text-decoration: none;
+}
+
+.wd-tuits-links img {
+	padding-right: 12px;
+}
+
+.wd-tuits-links .heart {
+	color: red;
+}
